@@ -16,3 +16,4 @@ jobs:
 
       - name: "Hello, running veracode scan on develop"
         run: test.sh
+        shell: bash
