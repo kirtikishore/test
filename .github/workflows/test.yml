@@ -1,0 +1,17 @@
+# This is a basic workflow that is triggered with cron schedule
+
+---
+name: Veracode scan for develop
+
+# Controls when the action will run.
+on:
+  schedule:
+    - cron: '5 * * * *'
+jobs:
+  scan_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: "Hello, running veracode scan on develop"
