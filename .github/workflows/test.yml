@@ -5,8 +5,6 @@ name: Veracode scan for develop
 
 # Controls when the action will run.
 on:
-  push:
-    branches: [main]
   schedule:
     - cron: '6 * * * *'
 jobs:
