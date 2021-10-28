@@ -17,4 +17,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: "Hello, running veracode scan on develop"
-        run: test.sh
+        run: something/test.sh
